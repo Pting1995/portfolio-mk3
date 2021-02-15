@@ -1,0 +1,28 @@
+.navbar-brand {
+    font-size: x-large;
+}
+
+.navbar-color {
+    background-color: rgb(43, 50, 63)
+}
+
+.nav-sub {
+    float: right;
+}
+
+.about-me {
+    width: 500px;
+    justify-content: center;
+}
+
+.important {
+    font-family: "Quicksand", sans-serif;
+}
+
+div.container4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
