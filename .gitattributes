@@ -1,2 +1,2 @@
-images/*.gif filter=lfs diff=lfs merge=lfs -text
+public/images/*.gif filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
