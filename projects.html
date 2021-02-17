@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Peter Ting</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-color" id="top-nav">
+    <div class="container">
+        <a class="navbar-brand important" href="index.html">Peter Ting</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-sub" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-sub" href="./assets/Resume.pdf" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-sub" data-bs-toggle="modal" data-bs-target="#about-me-modal">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-sub" data-bs-toggle="modal" data-bs-target="#contact-me-modal">Contact Me</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Me Modal -->
+<div class="modal fade" id="about-me-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title important">Peter Ting</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                A promising software engineer who recently studied at University of
+                California Berkeley Extension’s Full Stack Development course. Having also graduated from University of
+                California, Riverside with a B.S. in Biology, I applied my analytical and logical skill set
+                to rapidly progress my web development. With an innate curiosity, I love exploring code and the
+                different ways to achieve the same goal. With a strong basis in responsive HTML, CSS, and jQuery, I am
+                eager to test my skill set and create something truly amazing and impactful.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Me Modal -->
+<div class="modal fade" id="contact-me-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title important">Peter Ting</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="align-items: center;">
+                <ul>
+                    <a href="mailto:pting1995@gmail.com">
+                        <i class="far fa-envelope contact-icon" style="font-size:40px; padding: 10px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pting002/" target="_blank">
+                        <i class="fa fa-linkedin contact-icon" style="font-size:40px; padding: 10px;"></i>
+                    </a>
+
+                    <a href="https://github.com/Pting1995" target="_blank">
+                        <i class="fa fa-github contact-icon" style="font-size:40px; padding: 10px;"></i>
+                    </a>
+                    <a href="./assets/Resume.pdf" target="_blank">
+                        <i class="far fa-file contact-icon" style="font-size:40px; padding: 10px;"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body data-bs-spy="scroll" data-bs-target="#top-nav" data-bs-offset="100"></body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card project-card">
+                <h5 class="card-header important">Project: Database Crawler</h5>
+                <div class="card-body">
+                    <img src="images/dbcrawler-demo-900x450.gif" class="gif-project">
+                    <h6 class="skills">Skills Showcase: Full Stack Development, Database Relationships, MySQL Database,
+                        Express, HTML & API routes, User Security</h6>
+                    <p class="card-text project-description">This site was made to tell the user about a given city's
+                        weather. Upon opening the webpage, the user will find an input field. Any city typed into the
+                        input
+                        field will be put into an API and todays weather will be shown on screen along with temperature,
+                        humidity, windspeed, and UV index. Below that the user will find a 5-day forecast where they can
+                        find the date, the weather, the temperature, and the humidity. If the user wants to search a new
+                        city in the input field they can. The days weather report and the 5 day forecast will also be
+                        updated. As of right now you can't click on the city history buttons to re-route you to that
+                        city,
+                        but i hope to add it in the future!</p>
+                    <a href="https://ancient-wave-96254.herokuapp.com/" class="btn btn-info" target="blank">Database
+                        Crawler Live Site</a>
+                    <a href="https://github.com/Pting1995/Database-Crawler" class="btn btn-info" target="blank">GitHub
+                        Database Crawler</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card project-card">
+                <h5 class="card-header important">Project: Fun Finder</h5>
+                <div class="card-body">
+                    <img src="images/fun-finder-demo-1400x700.gif" class="gif-project">
+                    <h6 class="skills">Skills Showcase: APIs, Dynamic Card Generation and Information </h6>
+                    <p class="card-text project-description">Finding activities to do for people to do since 2021! This
+                        starter website is driven to help the people stuck at find ways to make use of their free time.
+                        With
+                        the help of different API's, we are able to provide recommendations on various games, movies,
+                        and
+                        recipes that you may want to take a look at! Our site is still in the early production stage but
+                        our
+                        goal is to provide the most information about the specific search query possible. We hope to
+                        implement various link regarding the search results in the future.</p>
+                    <a href="https://github.com/Pting1995/Fun-Finder" class="btn btn-info button-bottom button-left"
+                        target="blank">GitHub Fun Finder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card project-card">
+                <h5 class="card-header important">Project: What to Eat Database</h5>
+                <div class="card-body">
+                    <img src="images/what-to-eat-demo-1400x700.gif" class="gif-project">
+                    <h6 class="skills">Skills Showcase: Databases, MVC, ORM, Express, Express-handlebars, Schema</h6>
+                    <p class="card-text project-description">This database was made to help keep track of food
+                        bucketlists!
+                        Have no idea what to eat for dinner? Take a gander at the "Foods that I have eaten!" list, or if
+                        you're feeling daring pick something off the "Foods that I haven't eaten!" list! This was one of
+                        my
+                        most confusing projects so far just because of the amount of files the model-view-controller
+                        (MVC)
+                        structure requires and the way information is passed between them to accomplish the goal of
+                        putting
+                        information into a database. This project was a great place to use express-handlebars because of
+                        how
+                        seemingly infinitely large databases are. With handlebars I could quickly create repeating
+                        structures on the page the user sees.</p>
+                    <a href="https://immense-river-70800.herokuapp.com/" class="btn btn-info" target="blank">What to eat
+                        Live Website</a>
+                    <a href="https://github.com/Pting1995/pet-tracker" class="btn btn-info" target="blank">GitHub What
+                        to Eat</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card project-card">
+                <h5 class="card-header important">Project: Random Password Generator</h5>
+                <div class="card-body">
+                    <img src="images/random-password-generator-demo-1400x700.gif" class="gif-project">
+                    <h6 class="skills">Skills Showcase: Pseudocoding, If-Else Statements, Arrays, Math.Random</h6>
+                    <p class="card-text project-description">This site was made to create random passwords! Upon
+                        clicking
+                        the "Generate Password" button prompts will appear and ask the user the desired criteria for the
+                        password. Criteria include character types, such as lower case characters, upper case
+                        characters,
+                        numeric characters special characters, and also password length. There are two checks for
+                        password
+                        length and that theres at least one character type selected. All desired characters are added to
+                        a
+                        control array where a random number is selected between 1 and the total number of items in the
+                        control array. This will occur until the desired password length is achieved and then will be
+                        displayed in the text box.</p>
+                    <a href="https://github.com/Pting1995/password-generator" class="btn btn-info" target="blank">GitHub
+                        Password Generator</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://kit.fontawesome.com/6438459355.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+</html>
